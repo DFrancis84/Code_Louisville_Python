@@ -1,4 +1,4 @@
-# Code Louisville 2018 Project
+# <p align="center">Code Louisville 2018 Project </p>
 
 ## Which is the tougher matchup? Left-Handed Pitchers(LHP) or Right-Handed Pitchers(RHP)?
 
