@@ -1,6 +1,7 @@
 # <p align="center">Code Louisville 2018 Project </p>
 
 ## DATA DICTIONARY
+```
     RANK - MLB RANK IN 2017
     TEAM - TEAMS IN THE MLB
     R - RUNS
@@ -11,6 +12,14 @@
     RunRatio - CALCULATED FORMULA, HITS DIVIDED BY RUNS
     LHP - LEFT HANDED PITCHER
     RHP - RIGHT HANDED PITCHER
+```
+
+
+                
+                
+![LHP](img/LHP.jpeg)|![RHP](img/RHP.jpeg)
+
+
 
 ## Which is the tougher matchup? Left-Handed Pitchers(LHP) or Right-Handed Pitchers(RHP)?
 
