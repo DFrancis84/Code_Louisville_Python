@@ -4,6 +4,13 @@
 ```
 git clone https://github.com/DFrancis84/Code_Louisville_Python.git
 ```
+## To Run
+
+1. Open your terminal
+2. Run Jupyter Notebook via `jupyter notebook`
+3. Select `Code Louisville 2018 Project` from your selections
+4. Open `Code_Louisville_Project.ipynb` file
+5. Click Green (PLAY) Arrow
 
 ## DATA DICTIONARY
 ```
