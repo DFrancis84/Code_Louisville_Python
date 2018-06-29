@@ -1,5 +1,10 @@
 # <p align="center">Code Louisville 2018 Project </p>
 
+## To Install 
+```
+git clone https://github.com/DFrancis84/Code_Louisville_Python.git
+```
+
 ## DATA DICTIONARY
 ```
     RANK - MLB RANK IN 2017
