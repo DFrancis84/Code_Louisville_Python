@@ -1,23 +1,39 @@
-# <p align="center">Code Louisville 2018 Project </p>
+# <p align="center"> Code Louisville 2018 Python Project - Devin Francis </p>
 
-## To Install 
+
+## To Install
 ```
 git clone https://github.com/DFrancis84/Code_Louisville_Python.git
 ```
-## To Run
 
+## You will need the following dependencies/programs
+1. Anaconda
+2. Jupyter Notebook
+3. SQLite3
+4. Pandas
+5. Numpy
+6. Matplotlib.pyplot
+7. RISE - https://github.com/damianavila/RISE
+
+## To Run
 1. Open your terminal
 2. Run Jupyter Notebook via `jupyter notebook`
 3. Select `Code Louisville 2018 Project` from your selections
 4. Open `Code_Louisville_Project.ipynb` file
-5. Click Green (PLAY) Arrow
+5. Click **RUN** (this will cause all the code to be hidden and just display the slides)
+    * If you want to view the code; Just click the **Show Code** button at top of notebook
+6. Click the statistics bar located at the very end.  This will only be present once you have RISE installed.  It will begin the slideshow presentation.
+7. Use **RIGHT** arrow to move slides forwards, and use **LEFT** arrow to move slides backwards.  There are no subslides, so the use of the **UP** arrow will not be needed.
 
 ## DATA DICTIONARY
 ```
     RANK - MLB RANK IN 2017
     TEAM - TEAMS IN THE MLB
+    AB - AT BATS
     R - RUNS
     H - HITS
+    HBP - HIT BY PITCH
+    E - ERRORS
     AVG - AVERAGE
     SLG - SLUGGING PERCENTAGE
     OBP - ON BASE PERCENTAGE
@@ -27,22 +43,23 @@ git clone https://github.com/DFrancis84/Code_Louisville_Python.git
 ```
 
 
-                
-                
-![LHP](img/LHP.jpeg)|![RHP](img/RHP.jpeg)
-
-
 
 ## Which is the tougher matchup? Left-Handed Pitchers(LHP) or Right-Handed Pitchers(RHP)?
 
 
-For my project, I wanted to use a small data source and help answer the age old question of, "Is a LHP better than a RHP?".
+For my project, I used `MLB.com` to download the data from the 2017 season to help answer the age old question of, "Is a LHP better than a RHP?".
 
-In the MLB, there are substantially more RHP than there are LHP, so they are a thing of value.  Is that really relevant though? Is a LHP more fierce and efficient than a RHP? My project utilizes a few data sets to determine if LHP are better than RHP.
+In the MLB, there are less left-handed batters than right-handed in the lineups so that means that left-handed pitchers have more advantage then righties.  So that is why you hear the phrase that, "A lefty is better than a righty".  I wanted to put that to the test, and use the numbers to see if the statement is in fact, "True".
 
-My first source of data was taking the actual batting averages of all 30 teams in the MLB, finding the mean and then comparing their averages to the average amongst all teams.  The results were no where near conclusive enough to be able to make that determination.  So I had to go a little further out of the box.
+In order to put this to the test, I used three different sets of data.
+1. Batting Averages
+2. Runs per Hit (Run Ratio)
+3. Actual average amount of runs given up based on AB/R
 
-The second set of data that I created was a 'RunRatio' column. This uses the amount of runs that each team scored last season against the total number of hits that each team scored.. Divided the two, to come up with an average run-per-hit number.  As with the first data set, I went ahead and took the total league data and determined a league average runs-per-hit.  
+First; I used the actual batting averages against each individual pitcher. I took the data from all 30 teams, and combined them together.  Using SQLite, I took that data and got the average batting average amongst all teams, per pitcher.  I then graphed all 30 teams against the league average. The results were inconclusive as it was dispersed against both pitchers.
 
- Well, according to my data set, there really isn't enough evidence to give a conclusive answer, so I would have to say that their is no big difference except for the fact of that there are not that many to choose from.
+Second; I used the average runs scored per hit against each pitcher. To get this data I gathered all the runs and hits for the entire league.  By dividing the two together, I was able to come up with a league average.  I graphed the individual teams average runs per hit against the determined league average.  Same as the data before, the results did not heavily favor one or the other.  
 
+Finally; I went for all the glory and decided to see which pitcher gave up the most runs per AB.  AB takes into effect walks, hbp, e, along with hits. Even though the results were close, clearly if one pitcher gave up more runs than the other, then that would determine if one was better than the other. 
+
+Go ahead and give the file a run to see the results.... What do you think the answer will be?  Is a LHP better than a RHP?
