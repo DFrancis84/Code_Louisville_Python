@@ -23,7 +23,7 @@ git clone https://github.com/DFrancis84/Code_Louisville_Python.git
 5. Click **RUN** (this will cause all the code to be hidden and just display the slides)
     * If you want to view the code; Just click the **Show Code** button at top of notebook
 6. Click the statistics bar located at the very end.  This will only be present once you have RISE installed.  It will begin the slideshow presentation.
-7. Use **RIGHT** arrow to move slides forwards, and use **LEFT** arrow to move slides backwards.  There are no subslides, so the use of the **UP** arrow will not be needed.
+7. Use **RIGHT** arrow to move slides forwards, and use **LEFT** arrow to move slides backwards.  There are no subslides, so the use of the **DOWN** arrow will not be needed.
 
 ## DATA DICTIONARY
 ```
